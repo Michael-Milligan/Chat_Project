@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v5.0": {}
+    ".NETCoreApp,Version=v5.0": {
+      "Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Client.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Client/1.0.0": {
+      "type": "project",
+      "path": "../Client/Client.csproj",
+      "msbuildProject": "../Client/Client.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v5.0": []
+    ".NETCoreApp,Version=v5.0": [
+      "Client >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\комп\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "net5.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\GitHub\\Chat_Project\\Chat Project\\Client\\Client.csproj": {
+              "projectPath": "D:\\GitHub\\Chat_Project\\Chat Project\\Client\\Client.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
